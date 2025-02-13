@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+header .tagline {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+header .highlight {
+    color: #ff5733;
+}
+
+/* Fun Text Animation */
+.fun-text {
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0%, 100% { color: #ff5733; }
+    50% { color: #007bff; }
+}
+
+/* Profile Image Section */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: rotate(360deg);
+}
+
+/* Code Block Section */
+.code-block {
+    background-color: #f4f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #555;
+    white-space: pre-wrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Fun Section */
+.fun-section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 30px 0 20px;
+    color: #007bff;
+}
+
+.fun-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fun-section li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Links Section */
+.button-section .btn {
+    text-decoration: none;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.button-section .btn:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+}
